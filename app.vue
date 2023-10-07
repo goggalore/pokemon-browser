@@ -1,5 +1,7 @@
+<script>
+// TODO: Meta data and header stuff.
+</script>
+
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+  <NuxtPage />
 </template>
