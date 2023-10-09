@@ -5,7 +5,9 @@ import Pokedex from 'pokedex-promise-v2'
 // This exists so that it is not reinitialized on every request, but rather only on
 // a server restart.
 const PokeAPI = new Pokedex()
+
 export default PokeAPI
+
 export const allPokemon = getAllPokemon()
 export const totalPokemonInAPI = allPokemon.then(ap => ap.length)
 

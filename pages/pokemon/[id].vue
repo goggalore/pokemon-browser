@@ -2,6 +2,11 @@
 // TODO: Add species information? https://pokeapi.co/api/v2/pokemon-species/654/
 // TODO: Display type in a nice way
 // TODO: Validate route https://nuxt.com/docs/getting-started/routing -> Route Validation
+// TODO: Route level error page rendering, i.e. if a 404 response is received, route to and render a generic 404 page.
+definePageMeta({
+  layout: false
+})
+
 const route = useRoute()
 const pokemonID = route.params.id
 
