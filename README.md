@@ -64,6 +64,16 @@ While I was hesitant to use the package since I know you may have wanted to see 
 I really appreciated the type safety and robust error handling it provided.
 Ultimately, I read the source code to ensure it wasn't just a wasteful additional package.
 
+## Code Comments
+Overall, I made a lot of comments especially in places where I felt I needed to explain *why* I did something.
+I don't usually leave SO many comments, as I tend to put explanations in JSDoc format and any extra, excessive 
+reasoning in commit messages or in the team documentation location. 
+
+I wanted them to be very visible here because I worked so independently on it and it's an offhand project.
+
+On that note though, I DID make commits. If you look into the commit history, 
+you can get an idea of how I commit things.
+
 ## What the app is missing:
 
 There a few things leftover that I know are missing and wish I could have addressed, 
@@ -78,14 +88,21 @@ common error codes, i.e. a 404 page and a more general error page.
 Additionally, sadly the back-end server hardly addresses cases where the incorrect data 
 is sent or when something goes wrong when making the third party requests. 
 
+You'll see some TODOs in the code denoting this.
+
 ### Styling for the search input component
 Yeah, that thing is tiny and hard to read compared to the rest of the website. It also overlaps the button. 
 It wasn't styled because of the self-imposed time restraint.
 
-### Back navigation doesn't preserve state
+### Back navigation to index.vue doesn't preserve state
 Arguably not necessary, but I think it's a nicer UX if the data is preserved from the page you navigated from,
-and also the client-side re-fetching is noticeably slower. It would be nice if it didn't do that as a whole,
-but I did not know the solution to preventing that off the top of my head.
+and also the client-side re-fetching is noticeably slower. It would be nice if it didn't do that as a whole.
 
 ### Unit testing
-There's none at all, this app lives dangerously. 
+There are no programmatic tests at all, this app lives dangerously. 
+
+### Other
+There's likely a few other pitfalls, some of the code orginization isn't the best 
+(both the server and client `pokemon/[id]` files are large) though I didn't get to refactoring
+them either. Other than that, I mentioned to Doug that this was the first time I'd be using
+Nuxt/Vue, so there may be some things I did in a funny way.
