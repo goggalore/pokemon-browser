@@ -62,7 +62,7 @@ async function getSpeciesSummary(pokemonID: string): Promise<SpeciesSummary | nu
       version: randomDescription.version.name
     } : null
   } catch (error) {
-    console.log(error) // you could log something like this in server logs for error analysis
+    // you could log error data in server logs for error analysis
     return null
   }
 }
