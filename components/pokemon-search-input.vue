@@ -1,19 +1,26 @@
 <script setup lang="ts">
-const query = ref('')
-const onClick = async (): Promise<void> => {
+const inputQuery = ref('')
+
+const navigateToSearch = async (): Promise<void> => {
   navigateTo({
     path: '/search',
-    query: { name: query.value }
+    query: { name: inputQuery.value }
   })
 }
 </script>
 
 <template>
-  <input
-    v-model="query"
-    placeholder="Search Pokemon..."
-  >
-  <button @click="onClick">
-    Go
-  </button>
+  <div>
+    <input
+      v-model="inputQuery"
+      placeholder="Search Pokemon..."
+      @keyup.enter="navigateToSearch"
+    >
+    <button
+      type="button"
+      @click="navigateToSearch"
+    >
+      Search
+    </button>
+  </div>
 </template>

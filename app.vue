@@ -1,7 +1,13 @@
-<script>
-// TODO: Meta data and header stuff.
+<script setup lang="ts">
+import '~/assets/css/main.css'
+useSeoMeta({
+  title: 'Pokemon Browser',
+  description: 'Search and browse pokemon, and discover information about them.'
+})
 </script>
 
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>

@@ -1,0 +1,36 @@
+/* messes with h1 header styles */
+body {
+    margin: 0;
+    font-family: DM Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+@media (prefers-color-scheme: light) {
+    li {
+        background-color: #f2f3f5;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #2b2a33;
+    }
+
+    h1, h2, h3, h4, h5, p, span {
+        color: white;
+    }
+
+    input, button {
+        color: white;
+        background-color: #1c1b22;
+        border-color: #1c1c1c;
+    }
+
+    li {
+        background-color: #1c1b22;
+
+    }
+
+    button:hover {
+        border-color: #3530ac;
+    }
+}

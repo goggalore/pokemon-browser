@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import Pokedex from 'pokedex-promise-v2'
+import formatTitle from '../utils/string-utils'
 
 const { pokemon } = defineProps<{
     pokemon: Pokedex.NamedAPIResource,
   }>()
 
-// TODO: Add actual env value: https://v2.nuxt.com/docs/configuration-glossary/configuration-env/
 const spriteBasePath = process.env.SPRITE_URL || 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites'
 
-// TODO: Add default sprite if one cannot be found.
 const pokemonPathMatch = pokemon.url.match(/\/pokemon\/\d+/i) || [ '' ]
 const pokemonPath = pokemonPathMatch[0]
 
@@ -20,11 +19,18 @@ const pokemonSpriteURL = `${spriteBasePath}${pokemonSpritePath}`
 <template>
   <li>
     <NuxtLink :to="pokemonPath">
-      <img
-        :src="pokemonSpriteURL"
-        :alt="`${pokemon.name} sprite`"
-      >
-      <h2>{{ pokemon.name }}</h2>
+      <div class="image-container">
+        <img
+          :src="pokemonSpriteURL"
+          :alt="`${pokemon.name} sprite`"
+          @error="$event.target.src = '/images/whats-that-pokemon.png'"
+        >
+      </div>
+      <h2>{{ formatTitle(pokemon.name) }}</h2>
     </NuxtLink>
   </li>
 </template>
+
+<style scoped>
+@import url('~/assets/css/pokemon-card.css');
+</style>

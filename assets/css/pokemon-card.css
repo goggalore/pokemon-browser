@@ -1,0 +1,36 @@
+li {
+    display: inline-block;
+    list-style: none;
+    border-radius: 0.3rem;
+    padding: 1.2rem 1rem;
+    box-shadow: 0 0 3px 1px rgba(84,82,84,1);
+    transition: box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+li img {
+    display: block;
+    width: 6rem;
+    margin: 0 auto;
+    /* prevents a layout shift when loading images */
+    aspect-ratio: 1 / 1;
+}
+
+li a {
+    text-decoration: none;
+    color: #1c1c1c;
+    font-size: 0.9em
+}
+
+li h2 {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    hyphens: auto;
+    word-wrap: break-word;
+}
+
+li:hover {
+    box-shadow: 0 0 7px 2px rgba(84,82,84,1);
+}
