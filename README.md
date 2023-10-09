@@ -71,9 +71,6 @@ reasoning in commit messages or in the team documentation location.
 
 I wanted them to be very visible here because I worked so independently on it and it's an offhand project.
 
-On that note though, I DID make commits. If you look into the commit history, 
-you can get an idea of how I commit things.
-
 ## What the app is missing:
 
 There a few things leftover that I know are missing and wish I could have addressed, 
@@ -102,7 +99,5 @@ and also the client-side re-fetching is noticeably slower. It would be nice if i
 There are no programmatic tests at all, this app lives dangerously. 
 
 ### Other
-There's likely a few other pitfalls, some of the code orginization isn't the best 
-(both the server and client `pokemon/[id]` files are large) though I didn't get to refactoring
-them either. Other than that, I mentioned to Doug that this was the first time I'd be using
+There's likely a few other pitfalls. I mentioned to Doug that this was the first time I'd be using
 Nuxt/Vue, so there may be some things I did in a funny way.
