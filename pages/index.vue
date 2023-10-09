@@ -3,8 +3,7 @@ const { data: pokemonList } = await useFetch('/api/pokemon')
 </script>
 
 <template>
-  <div>
-    <PokemonSearchInput />
+  <NuxtLayout name="searchable">
     <PokemonCardContainer :pokemon-list="pokemonList" />
-  </div>
+  </NuxtLayout>
 </template>
