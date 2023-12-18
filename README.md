@@ -76,14 +76,6 @@ where `offset` and `limit` are constants defined at an earlier point,
 and where `process.env.POKEMON_API_URL` is defined in a `.env` file, though this the
 fast, negligent, non type-safe implementation aforementioned.
 
-## Code Comments
-Overall, I made a lot of comments especially in places where I felt I needed to explain *why* I did something.
-I don't usually leave SO many comments, as I tend to put explanations in JSDoc format and any extra, excessive 
-reasoning in commit messages or in the team documentation location. 
-
-I think that good code is something that speaks for itself and does not need excessive explanation,
-but I wanted them to be very visible here because I worked so independently on it and this is an offhand project.
-
 ## What the app is missing:
 
 ### Route Level Error Handling/General Error Handling: 
