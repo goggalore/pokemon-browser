@@ -1,6 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Pokemon Browser
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A small web project made for demonstration purposes for the reason that almost all the code I worked on in the past
+years is under copyright, and my GitHub is outdated. 
+
+I wanted to make a project that is up-to-date with my current capability. I have worked in React for the past five years,
+and I understand Next fundamentals well. I, however, chose to use a framework (Vue/Nuxt) as a challenge and to 
+get an idea of what another popular framework used in the web domain has to offer. 
+
+That being said, this is the first time I have ever used Vue. Anything demonstrated in this project is something I could
+do within React/Next with a much greater sense for standard practice, as well as in a much shorter time. Many of 
+the concepts overlap strongly, and any confident React programmer should understand what is going on relatively easily
+with a code read-through.
+
+The project took roughly 15 hours to complete.
 
 ## Setup
 
@@ -60,26 +72,19 @@ where `offset` and `limit` are constants defined at an earlier point,
 and where `process.env.POKEMON_API_URL` is defined in a `.env` file, though this the
 fast, negligent, non type-safe implementation aforementioned.
 
-While I was hesitant to use the package since I know you may have wanted to see raw usage of the API, 
-I really appreciated the type safety and robust error handling it provided.
-Ultimately, I read the source code to ensure it wasn't just a wasteful additional package.
-
 ## Code Comments
 Overall, I made a lot of comments especially in places where I felt I needed to explain *why* I did something.
 I don't usually leave SO many comments, as I tend to put explanations in JSDoc format and any extra, excessive 
 reasoning in commit messages or in the team documentation location. 
 
-I wanted them to be very visible here because I worked so independently on it and it's an offhand project.
+I think that good code is something that speaks for itself and does not need excessive explanation,
+but I wanted them to be very visible here because I worked so independently on it and this is an offhand project.
 
 ## What the app is missing:
 
-There a few things leftover that I know are missing and wish I could have addressed, 
-though ultimately I did not want to take too much
-time to deliver something that was demo-able. 
-
 ### Route Level Error Handling/General Error Handling: 
-It PAINS me that there is so little error handling across the application as a whole. I really would have liked to 
-especially add route level error handling, such that certain pages/components are rendered when the server responds with 
+It PAINS me that there is so little error handling across the application as a whole. I especially would like to add 
+route level error handling, such that certain pages/components are rendered when the server responds with 
 common error codes, i.e. a 404 page and a more general error page.
 
 Additionally, sadly the back-end server hardly addresses cases where the incorrect data 
@@ -96,8 +101,5 @@ Arguably not necessary, but I think it's a nicer UX if the data is preserved fro
 and also the client-side re-fetching is noticeably slower. It would be nice if it didn't do that as a whole.
 
 ### Unit testing
-There are no programmatic tests at all, this app lives dangerously. 
-
-### Other
-There's likely a few other pitfalls. I mentioned to Doug that this was the first time I'd be using
-Nuxt/Vue, so there may be some things I did in a funny way.
+There are no programmatic tests at all, this app lives dangerously. But seriously, in any application made for public production,
+some form of programmatic testing should exist.
