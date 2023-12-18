@@ -1,7 +1,11 @@
 # Pokemon Browser
 
-A small web project made for demonstration purposes for the reason that almost all the code I worked on in the past
-years is under copyright, and my GitHub is outdated. 
+A small web project that allows a user to browse and search for all current existing pokemon. The application
+is pretty minimally styled, though still features mobile and desktop views, as well as a large and dark mode
+as both took an insignificant amount of time to add.
+
+This project is made for demonstration purposes for the reason that almost all the code I worked on, and am proudest of, 
+in the past years of my professional career is under copyright, and my GitHub is outdated. 
 
 I wanted to make a project that is up-to-date with my current capability. I have worked in React for the past five years,
 and I understand Next fundamentals well. I, however, chose to use a framework (Vue/Nuxt) as a challenge and to 
@@ -16,7 +20,7 @@ The project took roughly 15 hours to complete.
 
 ## Setup
 
-Usage of NPM to install the dependecies and run the project is recommended. Installation with
+Usage of NPM to install the dependencies and run the project is recommended. Installation with
 other package managers were not tested.
 
 Make sure to install the dependencies:
