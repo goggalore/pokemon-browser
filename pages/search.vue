@@ -2,7 +2,9 @@
 // TODO: Validate route https://nuxt.com/docs/getting-started/routing -> Route Validation
 const route = useRoute()
 const fetchSearch = async () => {
-  return useFetch('/api/search', { query: { name: route.query.name }})
+  return useFetch('/api/search', {
+    query: { name: route.query.name.toLowerCase()
+    }})
 }
 
 const { data: pokemonList } = await fetchSearch()
